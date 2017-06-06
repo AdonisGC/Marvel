@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#BCF0E1"
+
+    tools:context="com.m08dev.adonis.marvel.MainActivityFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context="com.test.pau.moviedbfinalversion.PeliculaActivity">
+
+            <ImageView
+                android:layout_width="162dp"
+                android:layout_height="225dp"
+                android:id="@+id/peliPoster" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Título"
+                android:id="@+id/titulo"
+                android:maxLines="2"
+                android:gravity="center"
+                android:layout_alignTop="@+id/peliPoster"
+                android:layout_toRightOf="@+id/peliPoster"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:gravity="left"
+                android:id="@+id/fecha"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@+id/titulo"
+                android:layout_toRightOf="@+id/peliPoster"
+                android:layout_toEndOf="@+id/peliPoster" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Valoración"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/valoracion"
+                android:layout_below="@+id/fecha"
+                android:layout_toRightOf="@+id/peliPoster"
+                android:layout_toEndOf="@+id/peliPoster"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Popularidad"
+                android:gravity="left"
+                android:id="@+id/popularidad"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@+id/valoracion"
+                android:layout_toRightOf="@+id/peliPoster"
+                android:layout_toEndOf="@+id/peliPoster"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Catalogación"
+                android:id="@+id/catalogacion"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@+id/popularidad"
+                android:layout_alignLeft="@+id/fecha"
+                android:layout_alignStart="@+id/fecha"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Descripción"
+                android:layout_gravity="center_vertical|right"
+                android:maxLines="12"
+                android:id="@+id/descripcion"
+                android:layout_below="@+id/peliPoster"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Idioma"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/idioma"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/catalogacion"
+                android:layout_toRightOf="@+id/peliPoster"
+                android:layout_toEndOf="@+id/peliPoster" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
